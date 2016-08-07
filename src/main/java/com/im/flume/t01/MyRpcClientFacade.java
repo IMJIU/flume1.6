@@ -22,7 +22,7 @@ class MyRpcClientFacade {
 		Properties props = new Properties();
 		props.put("client.type", "default");
 		props.put("hosts", "h1");
-		props.put("hosts.h1", "192.168.199.210:41414");
+		props.put("hosts.h1", "192.168.199.210:44444");
 		props.put("batch-size", "10");
 		props.put("connect-timeout", "20000");
 		props.put("request-timeout", "20000");
