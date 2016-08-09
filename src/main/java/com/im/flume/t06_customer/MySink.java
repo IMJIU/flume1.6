@@ -9,7 +9,6 @@ import org.apache.flume.conf.Configurable;
 import org.apache.flume.sink.AbstractSink;
 
 public class MySink extends AbstractSink implements Configurable {
-
 	private String myProp;
 
 	@Override
@@ -44,7 +43,8 @@ public class MySink extends AbstractSink implements Configurable {
 		Transaction txn = ch.getTransaction();
 		txn.begin();
 		try {
-			// This try clause includes whatever Channel operations you want to do
+			// This try clause includes whatever Channel operations you want to
+			// do
 
 			Event event = ch.take();
 
